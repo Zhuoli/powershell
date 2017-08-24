@@ -1,0 +1,2 @@
+if ((gcm test-path -ErrorAction:SilentlyContinue) -and (test-path c:\torus\torusprofile.ps1)) { . c:\torus\torusprofile.ps1 } # auto-generated-by-torus-client
+. (Join-Path -Path (Split-Path -Parent -Path $PROFILE) -ChildPath $(switch($HOST.UI.RawUI.BackgroundColor.ToString()){'White'{'Set-SolarizedLightColorDefaults.ps1'}'Black'{'Set-SolarizedDarkColorDefaults.ps1'}default{return}}))
